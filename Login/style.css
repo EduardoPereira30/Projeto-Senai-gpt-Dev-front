@@ -1,32 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Jua&family=Marhey:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{/* Quer disser todos os elementos */
+
+    padding: 0%;             /*Margem interna*/
+    margin: 0%;              /*Margem externa*/
+    box-sizing: border-box;  /*Muda a estrutura de espaçamentos*/ 
+    font-family: "Inter";
+
+}
+
 .titulo {
 
     font-size: 76px;
 
 }
 
-.robo-image{
+.robo-image {
 
-    background-color: #8690DA;
+    background-image: url("../assets/imgs/Rectangle\ 1.png");
+    background-size: cover;
+    background-position-y: -40px;
+
     width: 50vw;   /* 50% da largura da tela*/
     height: 100vh; /* 100% da altura da tela*/
 
 }
 
-.page-container{
+.page-container {
 
     display: flex;
 
 }
 
-.login-container{
+.login-container {
 
-    background-color: #564787;
     width: 50vw;   /* 50% da largura da tela*/
     height: 100vh; /* 100% da altura da tela*/
 
     /*Kit sobrevivencia da cetralização*/
-    display: flex;/*Ativar o frex*/
-    flex-direction: column;/*Muda o flex para colunas*/
-    align-items: center;/*Centralizar horizontamente*/
-    justify-content: center;/*Centralizar verticalmente*/
+
+    display: flex;           /*Ativar o frex*/
+    flex-direction: column;  /*Muda o flex para colunas*/
+    align-items: center;     /*Centralizar horizontamente*/
+    justify-content: center; /*Centralizar verticalmente*/
+}
+
+.classes{ /* Com ponto antes */}
+
+#id{      /* Com hashtag antes */}
+
+img{      /* Tags, Sem nenhum prefixo */}
+
+.login-container img{
+
+    height: 60px;
+
 }
