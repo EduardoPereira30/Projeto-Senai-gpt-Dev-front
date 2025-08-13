@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Jua&family=Marhey:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
-*{/* Quer disser todos os elementos */
+* {/* Quer disser todos os elementos */
 
     padding: 0%;             /*Margem interna*/
     margin: 0%;              /*Margem externa*/
@@ -11,7 +11,9 @@
 
 .titulo {
 
+    font-weight: 400;
     font-size: 76px;
+    margin-bottom: 16px;
 
 }
 
@@ -43,16 +45,39 @@
     flex-direction: column;  /*Muda o flex para colunas*/
     align-items: center;     /*Centralizar horizontamente*/
     justify-content: center; /*Centralizar verticalmente*/
+
 }
 
-.classes{ /* Com ponto antes */}
+.classes { /* Com ponto antes */        }
 
-#id{      /* Com hashtag antes */}
+#id      { /* Com hashtag antes */      }
 
-img{      /* Tags, Sem nenhum prefixo */}
+img      {/* Tags, Sem nenhum prefixo */}
 
-.login-container img{
+.login-container img {
 
     height: 60px;
+
+}
+
+.inpt {
+
+    padding: 18px;               /*Marge interna                              */
+    background-color: #F7F9FB; /*Definea cor de fundo                       */
+    width: 377px;                /*Defini a largura                           */
+    border: 1px solid #ccc;    /*Define a borda                             */
+    border-radius: 10px;         /*Define o arredondamento da borda           */
+    margin-bottom: 16px;         /*Define a distancia de um botão para o outro*/ 
+
+}
+
+.btn {
+
+    cursor: pointer;
+    padding: 18px;               /*Marge interna                              */
+    background-color: #1C1C1C; /*Definea cor de fundo                       */
+    width: 377px;                /*Defini a largura                           */
+    color: #fff;
+    border-radius: 10px;         /*Define o arredondamento da borda           */
 
 }
