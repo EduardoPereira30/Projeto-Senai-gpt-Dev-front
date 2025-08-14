@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=DynaPuff:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jersey+15&family=Jua&family=Marhey:wght@300..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');*{
+    
+   margin: 0%;
+   padding: 0%;
+   font-family: "Inter";
+   font-weight: 400;
+
+}
+
 .main{
 
    display: flex;
@@ -6,6 +15,53 @@
 
 .robo-imagem{
 
-    
+   background-image:url(../assets/imgs/Rectangle\ 1.png);
+   background-size: cover;
+   background-position-y: -200;
+   width: 50vw;
+   height: 100vh;
 
+}
+
+.Login{
+
+   flex-direction: column; 
+   align-items: center;     
+   justify-content: center; 
+   display: flex;
+   background-color: #1C1C1C;
+   width: 50vw;
+   height: 100vh;
+   
+
+}
+
+.titulo {
+
+   color: #fff;
+   font-size: 73px;
+
+}
+
+.ipt{
+
+   font-size: 14px;
+   color: #fff;
+   border-color: #666;
+   background-color: #282828;
+   margin-bottom: 16px;
+   border-radius: 10px;
+   height: 56px;
+   width: 377px;
+
+
+}
+
+.botão{
+
+   font-size: 14px;
+   border-radius: 10px;
+   height: 56px;
+   width: 377px;
+   cursor: pointer;
 }
