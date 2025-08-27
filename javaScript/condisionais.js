@@ -1,3 +1,6 @@
+/**********     Nível Básico     ***********/
+
+
 // // Exercicio 1:
 
 // let idade = prompt("Qual e a idade? ");
@@ -41,7 +44,7 @@
 
 // }
 
-// Exercicio 4:
+// // Exercicio 4:
 
 // let numero = prompt("digite um numero");
 
@@ -63,7 +66,7 @@
 
 // }
 
-// Exercicio 5:
+// // Exercicio 5:
 
 // let idade = prompt("Digite sua idade");
 
@@ -83,7 +86,7 @@
 //     }
 // }
 
-// Exercicio 6:
+// // Exercicio 6:
 
 // let numero = prompt(" digite um numero")
 
@@ -96,36 +99,36 @@
 
 /**********     Nível Intermediário     ***********/
 
-// Calculadora simples
+// 1 - Calculadora simples
 
-let numero1 = Number( prompt("Digite seu primeiro numero"));
-let numero2 = Number(prompt("Digite seu segundo numero"));
-let operacao = prompt("Digite o tipo de operação");
+// let numero1 = Number( prompt("Digite seu primeiro numero"));
+// let numero2 = Number(prompt("Digite seu segundo numero"));
+// let operacao = prompt("Digite o tipo de operação");
 
-if (operacao == "+"){
+// if (operacao == "+"){
 
-let soma = numero1 + numero2;
-alert("A soma é: " + soma)
+// soma = numero1 + numero2;
+//    alert("A soma é: " + soma)
 
-} else if (operacao == "-") { 
+// } else if (operacao == "-") { 
 
-    subtracao = numero1 - numero2;
-    alert("A subtação é : " + subtracao);
+//     subtracao = numero1 - numero2;
+//     alert("A subtação é : " + subtracao);
 
-} else if (operacao == "*"){
+// } else if (operacao == "*"){
 
-    multiplicacao = numero1 * numero2;
-    alert("A subtração é : " + multiplicacao)
+//     multiplicacao = numero1 * numero2;
+//     alert("A subtração é : " + multiplicacao)
 
-} else{
+// } else if (operacao == "/"){
 
-   divicao = numero1 / numero2;
-   alert("A divição é: " + divicao)
+//    divicao = numero1 / numero2;
+//    alert("A divição é: " + divicao)
 
-}
+// }
 
 
-// Maior entre três números:
+// // 2 - Maior entre três números:
 
 // let numero1 = prompt("Digite seu primeiro numero");
 // let numero2 = prompt("Digite seu segundo numero");
@@ -147,7 +150,7 @@ alert("A soma é: " + soma)
 
 // }
 
-// Desconto em compras:
+// // 3 - Desconto em compras:
 
 // let valor = prompt("Insira o valor da compra");
 
@@ -162,5 +165,99 @@ alert("A soma é: " + soma)
 //     alert("valor da compra com desconto é: " + valor);
 
 // }
+
+// // 4 - Sistema de login simples:
+
+// let usuario = prompt("Digiti o user name");
+// let senha = prompt("Digiti a senha");
+
+
+// if ( usuario == "admin" && senha == 1234 ) {
+
+//     alert("Login bem-sucedido");
+
+// } else {
+
+//     alert("Acesso negado")
+
+// }
+
+
+/**********     Nível Avançado     ***********/
+
+// // 1 - Classificação de triângulos:
+
+// let lado1 = prompt("Insira o primeiro lado")
+// let lado2 = prompt("Insira o segundo lado")
+// let lado3 = prompt("Insira o terceiro lado")
+
+// if (lado1 == lado3 && lado1 == lado3) {
+
+//     alert("O triangulo é: equilátero")
+
+// } else {
+
+//     if (lado1 != lado2 && lado2 != lado3 && lado1 != lado3) {
+
+//         alert("O triangulo é: escaleno")
+
+//     } else {
+
+//         alert("O triangulo é: isósceles ")
+
+//     }
+
+// }
+
+// // 2 - Conversão de notas para conceitos:
+
+// let nota = prompt("Digite sua nota de 0 a 100");
+
+// if (nota < 60) {
+
+//     alert("nota é F");
+
+// } else if (nota > 60, nota <= 69) {
+
+//     alert("nota é D");
+
+// } else if (nota >= 70, nota <= 79) {
+
+//     alert("nota é c");
+
+// } else if (nota >= 80, nota <= 89) {
+
+//     alert("nota é B");
+
+// } else if (nota >= 90, nota <= 100) {
+
+//     alert("nota é A");
+
+// }
+
+// // 3 - Cálculo de IMC:
+
+let peso   = Number (prompt("Digite seu peso"));
+let altura = Number (prompt("Digite sua altura"));
+
+let IMC = peso / (altura * altura) ;
+
+if ( IMC <= 18,49) {
+
+    alert("Seu peso está com baixo peso")
+
+} else if ( IMC >= 18.5 && IMC <=24.99) {
+
+    alert("Seu peso está normal")
+
+} else if ( IMC >= 25 && IMC <= 29.99) {
+
+    alert("Você está com sobre peso")
+
+}else if ( IMC >= 30) {
+
+    alert("Você está com obsidade")
+
+}
 
 
