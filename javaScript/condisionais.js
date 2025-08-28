@@ -237,27 +237,29 @@
 
 // // 3 - Cálculo de IMC:
 
-let peso   = Number (prompt("Digite seu peso"));
-let altura = Number (prompt("Digite sua altura"));
+// let peso   = Number (prompt("Digite seu peso"));
+// let altura = Number (prompt("Digite sua altura"));
 
-let IMC = peso / (altura * altura) ;
+// let IMC = (altura * altura) / peso ;
 
-if ( IMC <= 18,49) {
+// if ( IMC <= 18.49) {
 
-    alert("Seu peso está com baixo peso")
+//     alert("Seu peso está com baixo peso");
 
-} else if ( IMC >= 18.5 && IMC <=24.99) {
+// } else if ( IMC >= 18.5 && IMC <=24.99) {
 
-    alert("Seu peso está normal")
+//     alert("Seu peso está normal");
 
-} else if ( IMC >= 25 && IMC <= 29.99) {
+// } else if ( IMC >= 25 && IMC <= 29.99) {
 
-    alert("Você está com sobre peso")
+//     alert("Você está com sobre peso");
 
-}else if ( IMC >= 30) {
+// }else if ( IMC >= 30) {
 
-    alert("Você está com obsidade")
+//     alert("Você está com obsidade");
 
-}
+// }
+
+
 
 
