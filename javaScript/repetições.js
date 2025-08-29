@@ -64,16 +64,17 @@
 // // 3 - Soma dos primeiros N números naturais:
 
 // let N = Number(prompt("Digite até que numero você quer"));
-// let i = 0;
-// while ( i <= N - 1) {
+// let i = 1;
+// let soma = 0;
+// while ( i <= N) {
 
-//     soma = i + 1;
+//   soma += i;
 //     console.log(soma);
 //     i++;
 
 // }
 
-// /*******  Nível Intermediário  *******/ 
+/*******  Nível Intermediário  *******/
 
 // // 1 - Exibir os números pares de 1 a 50:
 
@@ -85,29 +86,52 @@
 
 // // 2 - Jogo de adivinhação:
 
-let numero = Math.random(Number)*(100 - 0 ) - 1 ;
-let escolha = 0;
+// let numero = Math.floor(Math.random(Number) * (100 - 0) - 1);
+// let escolha = -1;
 
-while( escolha != numero){
+// while (escolha != numero) {
 
-escolha = prompt("Tente adivinhar o numero")
+//     escolha = prompt("Tente adivinhar o numero")
 
-    if(  numero < escolha){
+//     if (numero < escolha) {
 
-        alert("O numero certo é menor")
-        console.log(numero)
+//         alert("O numero certo é menor")
+//         console.log(numero)
 
-    } else{
+//     } else if (numero > escolha) {
 
-        alert("O numero certo é maior")
+//         alert("O numero certo é maior")
+//         console.log(numero)
 
-    }
+//     } else if (numero == escolha) {
 
-}
+//         alert(" O numero está ceto");
 
-alert(" O numero está ceto")
+//     }
 
+// }
 
+// // 3 - Contagem regressiva:
 
+// let contadora = prompt("Digite o numero para a contagen começar")
 
+// while (contadora >= 0) {
+//     alert(contadora);
+//     contadora--;
 
+// }
+
+/******  Nível Avançado  ******/
+
+// // 1 - Soma dos dígitos de um número:
+
+// let numero = prompt("digite o numero para soma os digitos");
+// let digitosArray = numero.toString().split('');
+
+// let i = 0;
+
+// while (i <= 0) {
+//         soma = Number(digitosArray(length)) + Number(digitosArray(length)) + Number(digitosArray(length));
+//         alert(soma);
+//         i++;
+// }
