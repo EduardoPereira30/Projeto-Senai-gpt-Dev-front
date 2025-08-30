@@ -1,3 +1,15 @@
+
+function adivinharlog() {
+
+    let divlogs = document.querySelector(".logs");
+    let tagP = document.querySelector("p");
+
+    tagP.innerHTML = "Exercicio executado ás " + new Date().toLocaleDateString();
+
+    divlogs.appendChild(tagP);
+
+}
+
 // /******  EXEMPLOS  ******/
 
 
@@ -42,96 +54,116 @@
 
 // /******  Nível Básico  ******/
 
-// // 1 - Contagem de 1 a 10:
+// 1 - Contagem de 1 a 10:
+function exercicios1() {
+    for (let i = 1; i <= 10; i++) {
 
-// for(let i = 1; i <= 10; i++ ){
+        console.log(i)
 
-// console.log(i)
+    }
 
-// }
+    adivinharlog();
+}
+// 2 - Tabuada de um número:
+function exercicios2() {
 
-// // 2 - Tabuada de um número:
+    let num = prompt("Escolha um numero")
 
-// let num = prompt("Escolha um numero")
+    for (let i = 1; i <= 10; i++) {
 
-// for (let i = 1; i <= 10; i++) {
+        resultado = num * i;
+        alert("numero = " + resultado);
 
-//     resultado = num * i;
-//     alert("numero = " + resultado);
+    }
 
-// }
+    adivinharlog();
+}
+// 3 - Soma dos primeiros N números naturais:
+function exercicios3() {
 
-// // 3 - Soma dos primeiros N números naturais:
+    let N = Number(prompt("Digite até que numero você quer"));
+    let i = 1;
+    let soma = 0;
+    while (i <= N) {
 
-// let N = Number(prompt("Digite até que numero você quer"));
-// let i = 1;
-// let soma = 0;
-// while ( i <= N) {
+        soma += i;
+        console.log(soma);
+        i++;
 
-//   soma += i;
-//     console.log(soma);
-//     i++;
+    }
 
-// }
-
+    adivinharlog();
+}
 /*******  Nível Intermediário  *******/
 
-// // 1 - Exibir os números pares de 1 a 50:
+// 4 - Exibir os números pares de 1 a 50:
+function exercicios4() {
 
-// for (let i = 2 ; i <= 50 ; i += 2){
+    for (let i = 2; i <= 50; i += 2) {
 
-//     console.log(i)
+        console.log(i)
 
-// }
+    }
 
-// // 2 - Jogo de adivinhação:
+    adivinharlog();
+}
+// 5 - Jogo de adivinhação:
+function exercicios5() {
+    let numero = Math.floor(Math.random(Number) * (100 - 0) - 1);
+    let escolha = -1;
 
-// let numero = Math.floor(Math.random(Number) * (100 - 0) - 1);
-// let escolha = -1;
+    while (escolha != numero) {
 
-// while (escolha != numero) {
+        escolha = prompt("Tente adivinhar o numero")
 
-//     escolha = prompt("Tente adivinhar o numero")
+        if (numero < escolha) {
 
-//     if (numero < escolha) {
+            alert("O numero certo é menor")
+            console.log(numero)
 
-//         alert("O numero certo é menor")
-//         console.log(numero)
+        } else if (numero > escolha) {
 
-//     } else if (numero > escolha) {
+            alert("O numero certo é maior")
+            console.log(numero)
 
-//         alert("O numero certo é maior")
-//         console.log(numero)
+        } else if (numero == escolha) {
 
-//     } else if (numero == escolha) {
+            alert(" O numero está ceto");
 
-//         alert(" O numero está ceto");
+        }
 
-//     }
+    }
 
-// }
+    adivinharlog();
+}
+// 6 - Contagem regressiva:
+function exercicios6() {
 
-// // 3 - Contagem regressiva:
+    let contadora = prompt("Digite o numero para a contagen começar")
 
-// let contadora = prompt("Digite o numero para a contagen começar")
+    while (contadora >= 0) {
+        alert(contadora);
+        contadora--;
 
-// while (contadora >= 0) {
-//     alert(contadora);
-//     contadora--;
+    }
 
-// }
-
+    adivinharlog();
+}
 /******  Nível Avançado  ******/
 
-// // 1 - Soma dos dígitos de um número:
+// 7 - Soma dos dígitos de um número:
+function exercicios7() {
 
-// let numero = prompt("digite o numero para soma os digitos");
-// let digitosArray = numero.toString().split('');
+    let numero = prompt("digite o numero para soma os digitos");
+    let digitosArray = numero.toString().split('');
 
-// let i = 0;
+    let i = 0;
 
-// while (i <= 0) {
-//         soma = Number(digitosArray(length)) + Number(digitosArray(length)) + Number(digitosArray(length));
-//         alert(soma);
-//         i++;
-// }
+    while (i <= 0) {
+        soma = Number(digitosArray(length)) + Number(digitosArray(length)) + Number(digitosArray(length));
+        alert(soma);
+        i++;
+    }
+    
+    adivinharlog();
+}

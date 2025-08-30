@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Sour Gummy" ;
+    font-size: 300;
+
+}
+
+body {
+
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cetralizar {
+
+    display: flex;
+    margin-top: 20px;
+    gap: 50px;
+    width: 850px;
+    justify-content: space-around;
+}
+
+body>div>div {
+
+    background-color: #c1bdda;
+    border: 3px solid #3d1365;
+    width: 400px;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+}
+
+.bloco {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: whitesmoke;
+    border: 2px solid #3d1365;
+    height: 80px;
+    padding: 1%;
+
+}
+
+.bloco button{
+
+background-color: #533d8b;
+color: whitesmoke;
+border: none;
+border-radius: 10px;
+width: 70%;
+height: 30px;
+cursor: pointer;
+
+transition: all ease 0.5s;
+
+}
+
+button:hover{
+
+background-color: #857db1;
+color: black;
+transform: scale(1.2);
+
+}
+
+button:active{
+
+    background-color: #3d1365;
+
+}
