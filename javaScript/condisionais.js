@@ -4,7 +4,7 @@ function adivinharlog() {
     let divlogs = document.querySelector(".logs");
     let tagP = document.querySelector("p");
 
-    tagP.innerHTML = "Exercicio executado ás " + new Date().toLocaleDateString() + "ás " + new Date().toLocaleTimeString();
+    tagP.innerHTML = "Exercicio executado ás " + new Date().toLocaleDateString() + "ás" + new Date().toLocaleTimeString();
 
     divlogs.appendChild(tagP);
 
